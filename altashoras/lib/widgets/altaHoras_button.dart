@@ -4,16 +4,23 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class altasHorasButton extends StatelessWidget {
-  altasHorasButton({super.key, this.buttonText = "BUTTON TEXT"});
+  altasHorasButton(
+      {super.key,
+      this.buttonText = "BUTTON TEXT",
+      this.horizontPadding,
+      this.vertPadding});
 
   String buttonText;
+  double? vertPadding;
+  double? horizontPadding;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 90),
+        padding: EdgeInsets.symmetric(
+            vertical: vertPadding ?? 20, horizontal: horizontPadding ?? 90),
         decoration: BoxDecoration(
           color: const Color(0xFF009AC8),
           border: Border.all(

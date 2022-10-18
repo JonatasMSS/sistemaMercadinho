@@ -20,8 +20,11 @@ class homePage extends GetView<HomePageController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              altasHorasButton(),
-              altasHorasButton(),
+              altasHorasButton(buttonText: "INICIAR VENDA"),
+              altasHorasButton(
+                buttonText: "CONSULTA DE ESTOQUE",
+                horizontPadding: 30,
+              ),
             ],
           ),
           const SizedBox(
@@ -31,8 +34,12 @@ class homePage extends GetView<HomePageController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              altasHorasButton(),
-              altasHorasButton(),
+              altasHorasButton(
+                  buttonText: "CONSULTA DE CLIENTES", horizontPadding: 35),
+              altasHorasButton(
+                buttonText: "RELATORIO DE VENDAS",
+                horizontPadding: 35,
+              ),
             ],
           )
         ],
