@@ -1,3 +1,4 @@
+import 'package:altashoras/widgets/altaHoras_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -10,9 +11,31 @@ class homePage extends GetView<HomePageController> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: const Text("My Home Page"),
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              altasHorasButton(),
+              altasHorasButton(),
+            ],
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              altasHorasButton(),
+              altasHorasButton(),
+            ],
+          )
+        ],
       ),
     );
   }
