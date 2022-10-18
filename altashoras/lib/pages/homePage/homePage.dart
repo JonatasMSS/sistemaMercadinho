@@ -11,6 +11,7 @@ class homePage extends GetView<HomePageController> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color.fromARGB(255, 253, 248, 235),
       body: Center(
         child: const Text("My Home Page"),
       ),
